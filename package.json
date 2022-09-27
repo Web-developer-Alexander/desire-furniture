@@ -1,0 +1,21 @@
+{
+  "name": "desire-furniture",
+  "version": "1.0.0",
+  "description": "Layout of the furniture studio website + Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "desire-furniture"
+  },
+  "author": "Alexander Puzankevich",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-git": "^2.10.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
