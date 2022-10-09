@@ -1,6 +1,6 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const sass          = require('gulp-sass')(require('sass'));
+const scss          = require('gulp-sass')(require('sass'));
 const concat        = require('gulp-concat');
 const browserSync   = require('browser-sync').create();
 const uglify        = require('gulp-uglify-es').default;
@@ -41,6 +41,8 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -49,10 +51,9 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
-
 function styles() {
   return src('app/scss/style.scss')
-      .pipe(sass({outputStyle: 'compressed'}))
+      .pipe(scss({outputStyle: 'compressed'}))
       .pipe(concat('style.min.css'))
       .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 version'],
