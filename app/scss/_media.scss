@@ -283,7 +283,8 @@
     .header {
         &__inner{
             flex-wrap: wrap;
-            padding-top: 45px;
+            padding-top: 30px;
+            height: 90px;
         }
         &__btn-menu {
             position: relative;
@@ -310,10 +311,10 @@
         position: relative;
         z-index: 10;
         text-align: center;
-        transform: translateY(-350px);
+        transform: translateY(-300px);
         transition: all .5s;
         &--open{
-            transform: translateY(30px);
+            transform: translateY(20px);
             .menu__list-link{
                 font-size: 16px;
                 line-height: 22px;

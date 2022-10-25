@@ -11,6 +11,15 @@ body {
 	color: $default;
 	overflow-x: hidden;
 	min-width: 300px;
+	-ms-touch-action: pan-y;
+    touch-action: pan-y;
+	// text-rendering: optimizeLegibility;
+	// -webkit-tap-highlight-color: transparent;
+    // -webkit-touch-callout: none;
+    // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    // user-select: none;
 }
 
 .wrapper {

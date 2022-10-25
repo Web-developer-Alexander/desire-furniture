@@ -100,6 +100,7 @@
         background-color: transparent;
         border: 1px solid rgba($title, .7);
         width: 100%;
+        box-shadow: none;
 
         &::placeholder {
             font-family: 'Open Sans', sans-serif;
@@ -882,6 +883,7 @@
         padding: 6px 17px;
         margin-bottom: 13px;
         width: 49%;
+        box-shadow: none;
 
         &::placeholder {
             color: #A1A1A1;
@@ -1154,6 +1156,7 @@
         border-radius: 20px;
         display: block;
         width: 100%;
+        box-shadow: none;
 
         &::placeholder {
             font-family: 'Open Sans', sans-serif;
@@ -1385,6 +1388,7 @@
         padding: 6px 17px;
         margin-bottom: 20px;
         width: 49%;
+        box-shadow: none;
 
         &::placeholder {
             color: #A1A1A1;
